@@ -4,6 +4,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
+  margin: 0px;
+  padding: 0px;
 }
 main {
   display: flex;
@@ -182,6 +184,9 @@ nav {
   list-style: none;
   margin-right: 40px;
 }
+.nav-bar .menu ul li:hover{
+  
+}
 .nav-bar .menu ul li a {
   text-decoration: none;
   color: white;
@@ -203,8 +208,35 @@ nav {
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 180px;
+  padding: 0px 220px;
 }
 .nav-bar .menu ul {
   display: flex;
+}
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blogs,
+  .container-details {
+    flex-direction: column;
+  }
+}
+
+@media only screen and(min-width:688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .players,
+  .container-details {
+    flex-direction: column;
+  }
 }
