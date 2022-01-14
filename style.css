@@ -184,8 +184,7 @@ nav {
   list-style: none;
   margin-right: 40px;
 }
-.nav-bar .menu ul li:hover{
-  
+.nav-bar .menu ul li:hover {
 }
 .nav-bar .menu ul li a {
   text-decoration: none;
@@ -223,20 +222,8 @@ nav {
   }
   .player,
   .blogs,
-  .container-details {
-    flex-direction: column;
-  }
-}
-
-@media only screen and(min-width:688px) and (max-width: 992px) {
-  .container {
-    width: 100%;
-  }
-  .players {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .players,
-  .container-details {
+  .container-details,
+  .nav-bar {
     flex-direction: column;
   }
 }
